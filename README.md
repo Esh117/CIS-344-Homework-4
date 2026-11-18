@@ -1,6 +1,6 @@
 # CampusFix – Campus Maintenance & IT Support System
 
-CampusFix is a beginner-friendly PHP and MySQL web application. Students and staff can submit campus service requests. The requests are saved in MySQL, and an administrator can review them and update their status.
+For Homeowrk 4 I decided to create a completely new PHP and MySQL web application called CampusFix. This website allows students and staff to submit campus service requests. The requests are saved in MySQL, and an administrator can review them and update their status.
 
 ## Features
 
@@ -15,15 +15,15 @@ CampusFix is a beginner-friendly PHP and MySQL web application. Students and sta
 
 ## Technologies
 
-- PHP 8 or later
+- PHP
 - MySQL / MariaDB
 - HTML5 and CSS3
 - XAMPP
-- Git and GitHub
+- GitHub
 
 ## Requirements
 
-Install XAMPP with Apache, PHP, and MySQL (MariaDB). A modern browser is also required.
+Install XAMPP with Apache, PHP, and MySQL (MariaDB).
 
 ## Setup with XAMPP
 
@@ -32,7 +32,7 @@ Install XAMPP with Apache, PHP, and MySQL (MariaDB). A modern browser is also re
 3. Open the XAMPP Control Panel and start **Apache** and **MySQL**.
 4. Open phpMyAdmin at `http://localhost/phpmyadmin`.
 5. Select the **Import** tab, choose `database/campusfix.sql`, and click **Import** (or open the SQL tab, paste the file contents, and run it).
-6. Check `config.php`. The default XAMPP settings are host `localhost`, database `campusfix`, user `root`, and an empty password. If your MySQL account uses a password, enter it as `DB_PASS`. If you downloaded the project from GitHub and `config.php` is missing, copy `config.example.php` and rename the copy to `config.php`.
+6. Check `config.php`. The default XAMPP settings are host `localhost`, database `campusfix`, user `root`, and an empty password. If your MySQL account uses a password, enter it as `DB_PASS`.
 7. Visit `http://localhost/CampusFix/` to use the request form.
 8. Visit `http://localhost/CampusFix/admin/setup.php` to create the first administrator. Use a username of at least 4 characters and a password of at least 10 characters.
 9. **Important:** After the admin account is created, delete `admin/setup.php` from the project folder.
@@ -88,14 +88,7 @@ Passwords are stored using PHP's `password_hash()` function and checked using `p
 - [ ] Refresh the dashboard and confirm the status remains updated.
 - [ ] Try submitting an invalid email and confirm it is rejected.
 
-## Security notes
-
-This project uses prepared statements, server-side validation, output escaping, password hashing, session regeneration at login, and CSRF tokens. For a public production deployment, add HTTPS, secure cookie settings, login rate limiting, stronger role/access controls, and environment-based secret configuration. Do not publish real database passwords or administrator credentials to GitHub.
-
-## GitHub submission
-
-Create a GitHub repository named `CampusFix`. Upload the project files and folders, including this README and the SQL file. The `.gitignore` file excludes `config.php`; keep it excluded because it may contain local database credentials. Include `config.example.php` so another person can copy it to `config.php` and add their own settings. Your instructor can follow the XAMPP setup instructions above to run the project locally.
 
 ## Author
 
-Student project – PHP and MySQL database assignment.
+Eshwar Basdeo - Homework 4 Submission.
