@@ -1,0 +1,9 @@
+# Local database configuration (keep credentials out of GitHub)
+config.php
+config.local.php
+
+# Operating system / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
